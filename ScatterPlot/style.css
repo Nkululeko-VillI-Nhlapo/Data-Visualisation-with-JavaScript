@@ -1,0 +1,73 @@
+/* Import Source Sans Pro font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* Apply Source Sans Pro font to all elements */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Set HTML height to 100% */
+html {
+    height: 100%;
+}
+
+/* Body styling */
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling for SVG element */
+svg {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Styling for bars with class 'bar' */
+.bar {
+    background-color: #2B7A78;
+    border-color: #2B7A78;
+    fill: #2B7A78;
+}
+
+/* Styling for dots on hover */
+.dot:hover {
+    fill: rgb(221, 221, 221);
+}
+
+/* Styling for groups (g elements) */
+g {
+    color: rgb(221, 221, 221);
+}
+
+/* Styling for tooltip */
+#tooltipo {
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    margin-top: 5px;
+    color: rgb(0, 28, 243);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Styling for legend */
+#legend {
+    margin-top: 5px;
+    color: rgb(7, 0, 99);
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Styling for title */
+#title {
+    font-size: 28px;
+    fill: rgb(221, 221, 221);
+    text-transform: uppercase;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="./TreeDia.css">
+    
+    <!-- Include D3.js library for data visualization -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
+    <!-- Page title -->
+    <title>Treemap Diagram</title>
+</head>
+<body>
+    <!-- Title of the page -->
+    <h2 id='title'>Highest Earning Movies</h2>
+    
+    <!-- Main container -->
+    <div id='container'>
+        <!-- SVG element for the treemap diagram -->
+        <svg id='board'></svg>
+        
+        <!-- Right side panel containing legend and description -->
+        <div id='rSide'>
+            <!-- Tooltip container for displaying additional information -->
+            <div id='tooltip'></div>
+
+            <!--Small key board-->
+            <svg id='legend'>
+                <g>
+                    <rect class="legend-item" x="10" y="0" width="40" height="40" fill="yellow"></rect>
+                    <text x="60" y="20" fill="white">Action</text>
+                </g>
+                <g>
+                    <rect class="legend-item" x="10" y="40" width="40" height="40" fill="lightgreen"></rect>
+                    <text x="60" y="60" fill="white">Drama</text>
+                </g>
+                <g>
+                    <rect class="legend-item" x="10" y="80" width="40" height="40" fill="coral"></rect>
+                    <text x="60" y="100" fill="white">Adventure</text>
+                </g>
+                <g>
+                    <rect class="legend-item" x="10" y="120" width="40" height="40" fill="lightblue"></rect>
+                    <text x="60" y="140" fill="white">Family</text>
+                </g>
+                <g>
+                    <rect class="legend-item" x="10" y="160" width="40" height="40" fill="pink"></rect>
+                    <text x="60" y="180" fill="white">Animation</text>
+                </g>
+                <g>
+                    <rect class="legend-item" x="10" y="200" width="40" height="40" fill="khaki"></rect>
+                    <text x="60" y="220" fill="white">Comedy</text>
+                </g>
+                <g>
+                    <rect class="legend-item" x="10" y="240" width="40" height="40" fill="tan"></rect>
+                    <text x="60" y="260" fill="white">Biography</text>
+                </g> 
+            </svg>
+             <!-- Description of the treemap -->
+             <div id='description'>Top 95 Highest Grossing Movies Sorted by Revenue</div>
+            </div>
+        </div>
+    </body>
+    
+    <!-- Include script for the treemap functionality -->
+    <script defer src='TreeDia.js'></script>
+    
+    <!-- Include script for FreeCodeCamp testing -->
+    <script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    </html>

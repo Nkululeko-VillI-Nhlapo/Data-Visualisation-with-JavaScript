@@ -1,0 +1,42 @@
+Choropleth Visualisation  with Html,Css and JS(d3)
+By Nhlapo Nkululeko
+
+The code uses D3.js to fetch, process, and visualize county and education data, creating
+ an interactive choropleth map where the color of each county represents the percentage 
+ of the population with a bachelor's degree or higher. The map includes interactivity 
+ with tooltips displaying detailed information when a county is hovered over.
+
+Here's a high-level description of what each part of the code does:
+
+ Data URLs:
+Two URLs are defined to fetch the county and education data, respectively.
+Data Variables:
+Variables (countyData and educationData) are declared to store the fetched data.
+
+D3 Selections:
+D3 is used to select the SVG board (#board) and tooltip (#tooltip) elements.
+
+Draw Map Function:
+drawMap function is defined to create the choropleth map.
+It binds county data to path elements, using D3's enter/update/exit pattern.
+For each county, it sets the path data (d attribute) using D3's geoPath.
+Colors are determined based on the education percentage, and data attributes are set for
+ interactivity. Mouseover and mouseout events are defined to show/hide a tooltip with 
+ county-specific information.
+
+Fetching County Data:
+D3's json function is used to fetch county data. The received TopoJSON data is converted 
+to GeoJSON format (topojson.feature).The resulting GeoJSON features are stored in the 
+countyData variable.
+
+Fetching Education Data:
+D3's json function is used again to fetch education data.
+The education data is stored in the educationData variable.
+
+Drawing the Map:
+After both county and education data are fetched, the drawMap function is called to 
+render the choropleth map.
+
+Console Logging:
+Some log statements are included to output the fetched data for verification and 
+debugging.

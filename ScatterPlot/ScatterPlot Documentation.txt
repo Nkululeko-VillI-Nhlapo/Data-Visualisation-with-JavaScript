@@ -1,0 +1,46 @@
+Scatterplot  with Html,Css and JS(d3)
+By Nhlapo Nkululeko
+
+This code fetches cyclist data, creates an interactive scatterplot using D3.js, and displays information 
+such as race times, years, and doping allegations. The code includes functions for setting up scales, 
+drawing the canvas, drawing data points, and generating axes.
+
+
+Here's a breakdown of what each section does:
+
+Data Source and XMLHttpRequest Setup:
+Defines the URL for the cyclist data JSON file.
+Creates a new XMLHttpRequest object (req).
+
+Variable Declarations:
+Initializes an empty array (values) to store the data.
+Declares variables for scales (xScale and yScale) and axes (xAxis and yAxis).
+Sets the dimensions of the SVG canvas (width, height, and padding).
+
+D3 Selections:
+Selects the SVG element with d3.select('svg') and the tooltip element with d3.select('#tooltip').
+
+Scale Generation:
+Defines a function (generateScales) to generate scales for the x and y axes based on the data's year and 
+time values. These scales are used to map data points to positions on the SVG.
+
+Canvas Drawing:
+Defines a function (drawCanvas) to set the width and height of the SVG canvas.
+
+Data Point Drawing:
+Defines a function (drawPoints) to create circles for each data point on the SVG. The circles represent 
+cyclists, and their positions are determined by the scales. Different colors are used based on whether 
+there are doping allegations.
+
+Axis Generation:
+Defines a function (generateAxes) to generate x and y axes using the previously defined scales. The x-axis 
+shows the years, and the y-axis shows the race times in minutes and seconds.
+
+XHR Request Setup and Callback:
+Opens a GET request to the specified URL.
+Defines an onload callback function that is triggered when the data is successfully loaded.
+Parses the JSON response and stores it in the values array.
+Calls functions to draw the canvas, generate scales, draw data points, and generate axes.
+
+XHR Request Send:
+Sends the XMLHttpRequest to initiate the data fetching process.

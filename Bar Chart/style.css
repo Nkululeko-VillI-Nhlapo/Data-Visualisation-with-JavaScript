@@ -1,0 +1,22 @@
+/* Add your CSS styling here */
+#chart-container {
+    width: 800px;
+    margin: auto;
+  }
+  
+  .bar {
+    fill: steelblue;
+  }
+  
+  .bar:hover {
+    fill: #4682b4;
+  }
+  
+  #tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    opacity: 0;
+  }
+  

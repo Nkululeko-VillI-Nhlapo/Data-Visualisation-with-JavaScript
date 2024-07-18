@@ -1,0 +1,113 @@
+/* Import the 'Source Sans Pro' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* Apply the 'Source Sans Pro' font to all elements */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Set minimum height for HTML and body to 100% */
+html, body {
+    min-height: 100%;
+}
+
+/* Styling for the body */
+body {
+    background-color: #f7f7f74d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(109, 0, 173);
+    margin: none; /* Note: 'margin: none;' is not a valid CSS property. It should be 'margin: 0;' */
+}
+
+/* Styling for SVG elements */
+svg {
+    background-color: #0080c0;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Set minimum height and width for the 'board' SVG element */
+#board {
+    min-height: 600px;
+    min-width: 1000px;
+}
+
+/* Change fill color on tile hover */
+.tile:hover {
+    fill: rgb(224, 7, 7);
+}
+
+/* Styling for 'g' elements */
+g {
+    color: #1D1F20;
+}
+
+/* Styling for tooltip */
+#tooltip {
+    visibility: hidden;
+    min-height: 160px;
+    width: 200px;
+    margin-top: 2px;
+    color: #1D1F20;
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#tooltip hr {
+    width: '80%'; /* Note: Remove quotes for valid property value */
+    color: #1D1F20;
+    background-color: #1D1F20;
+    height: 1px;
+    border: none;
+}
+
+/* Styling for description */
+#description {
+    text-align: center;
+    color: #1D1F20;
+    font-size: 18px;
+}
+
+/* Styling for the small key board */
+#legend {
+    color: rgb(56, 58, 74);
+    font-size: 18px;
+    text-align: center;
+    min-height: 280px;
+    max-width: 180px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Styling for the title */
+#title {
+    font-size: 28px;
+    color: #1D1F20;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Styling for the main container */
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the right side panel */
+#rSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    width: 200px;
+}

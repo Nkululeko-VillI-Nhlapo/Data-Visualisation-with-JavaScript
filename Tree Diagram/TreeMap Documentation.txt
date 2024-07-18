@@ -1,0 +1,40 @@
+Treemap Visualisation  with Html,Css and JS(d3)
+By Nhlapo Nkululeko
+
+TreeMap visualization code combines HTML, CSS (not included), and JavaScript with the 
+D3.js library to create an interactive TreeMap visualization of movie data, displaying 
+information such as movie names, categories, and revenue values. The TreeMap is designed 
+to be visually appealing and responsive to user interactions.
+
+1.Import Libraries:
+The code starts by importing the D3.js library, which is a powerful library for creating 
+dynamic, interactive data visualizations in the browser.
+
+2.CSS Styling:
+The code assumes the existence of CSS styling, especially for elements such as 'tile,' 
+which is used for styling the rectangles in the treemap.
+
+3.Data URL and Variables:
+3.1 movieDataUrl: Holds the URL of a JSON file containing movie data.
+
+3.2 movieData: Will store the movie data retrieved from the JSON file.
+3.3 board and tooltip: D3 selections for the 'board' SVG element and the 'tooltip' div.
+
+4.drawTreeMap Function:
+This function is responsible for rendering the TreeMap visualization.
+It uses D3's hierarchy and treemap functions to structure and layout the movie data.
+The treemap layout is applied to the hierarchy, determining the positioning and size of 
+each rectangle in the treemap.The function then selects the leaves (individual movies) 
+from the hierarchy.For each movie, it appends a group (<g>) element to the SVG board, 
+representing each movie tile. Inside each group, a rectangle (<rect>) is appended for the
+ movie, with attributes like width, height, color, and data attributes for tooltip 
+ information. A mouseover event listener is added to display a tooltip with information 
+ about the movie when the user hovers over it. Similarly, a mouseout event listener is 
+ added to hide the tooltip when the user moves the cursor away.
+Additionally, text (<text>) is appended within each group to display the name of the 
+movie.
+
+5.Loading Data:
+The script uses D3's json function to asynchronously load the movie data from the 
+specified URL. Upon successful loading, the drawTreeMap function is called to render the
+ TreeMap.

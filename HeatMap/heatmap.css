@@ -1,0 +1,93 @@
+/* Importing 'Source Sans Pro' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* Applying 'Source Sans Pro' font to all elements */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Setting minimum height for the HTML element */
+html {
+    min-height: 100%;
+}
+
+/* Styling the body element */
+body {
+    /* Background color for the body */
+    background-color: #6c6e74;
+    /* Flex container properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Ensuring minimum height for the body */
+    min-height: 100%;
+    /* Text color for the body */
+    color: #c9e0f0;
+}
+
+/* Styling for SVG elements */
+svg {
+    /* Background color for SVG elements */
+    background-color: #163D57;
+    /* Padding around SVG elements */
+    padding: 10px;
+}
+
+/* Styling for the '#board' ID selector */
+#board {
+    /* Minimum height and width for the '#board' element */
+    min-height: 600px;
+    min-width: 1200px;
+}
+
+/* Styling for the '.cell:hover' class selector */
+.cell:hover {
+    /* Fill color when hovering over '.cell' elements */
+    fill: black;
+}
+
+/* Styling for 'g' elements */
+g {
+    /* Text color for 'g' elements */
+    color: #E0E3F0;
+}
+
+/* Styling for the '#tooltip' ID selector */
+#tooltip {
+    /* Initial state for tooltip */
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    margin-top: 2px;
+    /* Text color for the tooltip */
+    color: #d7efff;
+    /* Font size for the tooltip */
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Styling for the '#legend' ID selector */
+#legend {
+    /* Text color for the '#legend' element */
+    color: rgb(56, 58, 74);
+    /* Font size for the '#legend' element */
+    font-size: 18px;
+    /* Text alignment for the '#legend' element */
+    text-align: center;
+    /* Minimum height for the '#legend' element */
+    min-height: 150px;
+}
+
+/* Styling for the '#title' ID selector */
+#title {
+    /* Font size for the title */
+    font-size: 28px;
+    /* Text color for the title */
+    color: #d8f0ff;
+    /* Uppercase text for the title */
+    text-transform: uppercase;
+    /* Margin properties for the title */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

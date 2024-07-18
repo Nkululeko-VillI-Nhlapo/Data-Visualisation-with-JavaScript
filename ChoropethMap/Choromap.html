@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="./Choromap.css">
+    
+    <!-- Scripts for D3.js and TopoJSON -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha256-tHoAPGoNdhIR28YHl9DWLzeRfdwigkH7OCBXMrHXhoM=" crossorigin="anonymous"></script>
+    
+    <!-- Title of the web page -->
+    <title>Choropleth Map</title>
+</head>
+<body>
+    <!-- Main content of the web page -->
+    <h2 id='title'>United States Education Attainment</h2>
+    <div id='container'>
+        <!-- SVG container for the choropleth map -->
+        <svg id='board'>
+            
+        </svg>
+        
+        <!-- Container for the right-side elements -->
+        <div id='rightSide'>
+            <!-- Tooltip container -->
+            <div id='tooltip'>
+
+            </div>
+            
+            <!--  Dimensions and Colors for the map -->
+            <svg id='sCont'>
+                <g>
+                    <rect x="10" y="0" width="40" height="40" fill="tomato"></rect>
+                    <text x="60" y="20" fill="white">Less than 15%</text>
+                </g>
+                <g>
+                    <rect x="10" y="40" width="40" height="40" fill="orange"></rect>
+                    <text x="60" y="60" fill="white">15% to 30%</text>
+                </g>
+                <g>
+                    <rect x="10" y="80" width="40" height="40" fill="lightgreen"></rect>
+                    <text x="60" y="100" fill="white">30% to 45%</text>
+                </g>
+                <g>
+                    <rect x="10" y="120" width="40" height="40" fill="limegreen"></rect>
+                    <text x="60" y="140" fill="white">More than 45%</text>
+                </g>
+            </svg>
+            
+            <!-- Description of the data source -->
+            <div id='description'>Percentage of students from age 25 and older with a bachelor's degree or higher (2010-2014). Source: <a href='https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx'>USDA Economic Research Service</a></div>
+        </div>
+    </div>
+</body>
+
+<!-- Script tags for JavaScript files -->
+<script defer src='Choromap.js'></script>
+<script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</html>

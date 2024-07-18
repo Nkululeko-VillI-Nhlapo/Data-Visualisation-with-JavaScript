@@ -1,0 +1,92 @@
+/* Apply the 'Source Sans Pro' font to all elements */
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* Set a minimum height of 100% for HTML and body */
+html, body{
+    min-height: 100%
+}
+/* Styling for the body element */
+body {
+    background-color: rgb(6, 5, 71);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FDF1E7;
+    margin: none;
+}
+/* Styling for the SVG element */
+svg{
+    background-color: #017e7e;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Styling for the choropleth map container */
+
+#board{
+    min-height: 600px;
+    min-width: 950px;
+}
+
+
+/* Hover effect for the county element */
+.county:hover{
+    fill: black
+}
+
+/* Styling for 'g' elements */
+g{
+    color: #FDF1E7
+}
+
+/* Styling for the tooltip */
+#tooltip{
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    margin-top: 2px;
+    color: #FDF1E7;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#sCont{
+    color: rgb(56, 58, 74);
+    font-size: 18px;
+    text-align: center;
+    min-height: 150px;
+    max-width: 180px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+#title{
+    font-size: 28px;
+    color: #FDF1E7;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#description a{
+    text-decoration: none;
+    color: #f77103;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#rightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    background-color: rgb(39, 39, 43);
+}

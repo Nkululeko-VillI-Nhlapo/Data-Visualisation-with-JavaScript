@@ -1,0 +1,44 @@
+Heatmap Visualisation  with Html,Css and JS(d3)
+By Nhlapo Nkululeko
+
+ The code uses D3.js to create a heat map that visually represents global land-surface temperatures over 
+ time, with interactive features such as tooltips and axes for better interpretation. The temperature 
+ variance is categorized by color, and the visualization provides insights into temperature patterns from 
+ 1753 to 2015. Html and Css are also leveraged to lay foundation for the date, and customize it.
+
+ 
+ Here's a high-level description of what each part of the code does:
+
+Data Retrieval:
+The URL of a JSON file containing global temperature data is defined (url).
+An XMLHttpRequest (req) is created to asynchronously fetch the data.
+
+Data Variables:
+Variables (baseTemp and values) are declared to store the base temperature and an array of temperature 
+variance values.
+
+SVG and Scales Setup:
+D3.js is used to select the SVG element and tooltip.
+Scales (xScale and yScale) are generated based on the data, mapping years to the x-axis and months to the 
+y-axis.
+
+Drawing the Board:
+The SVG dimensions are set based on predefined values (width, height) using D3.
+
+Drawing Cells (Rectangles):
+Rectangles are appended to the SVG based on the temperature variance data.
+The color of each rectangle represents the temperature variance category.
+Data attributes and event listeners are added for interactivity.
+
+
+Generating Axes:
+X and Y axes are generated using D3, with tick formatting for better readability.
+The axes are appended to the SVG.
+
+Data Loading and Visualization:
+The XMLHttpRequest is configured to fetch the JSON data asynchronously.
+Upon loading, the JSON data is parsed, and the base temperature and variance values are stored.
+The console logs the base temperature and variance values.
+Functions to draw the board, generate scales, draw cells, and generate axes are called to visualize the 
+data.
+

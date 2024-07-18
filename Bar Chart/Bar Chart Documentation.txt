@@ -1,0 +1,46 @@
+@Bar Chart visualization, By Nhlapo Nkululeko
+Using Html,Css and JS(d3)
+
+
+The provided code sets up an interactive bar chart using D3.js, a JavaScript library for 
+manipulating documents based on data. Here's a breakdown of what each part of the code does:
+
+HTML Structure:
+The HTML file defines the basic structure of the document, includes a title, and links external styles and
+ scripts.
+
+Sample Data:
+An array (data) with sample data representing GDP values for different dates.
+Chart Dimensions:
+Defines the width, height, and margins for the chart.
+
+SVG Container:
+Appends an SVG element to the HTML document, creating a container for the chart with proper dimensions and 
+margins.
+
+Scales:
+Defines scales for the x-axis (xScale) and y-axis (yScale) based on the sample data.
+
+Axes:
+Creates x-axis and y-axis with corresponding scales and appends them to the SVG container.
+
+Bars:
+Binds the sample data to rectangles (bars) within the SVG container.
+Sets attributes such as position, width, and height based on the data.
+Adds a class ("bar") for styling purposes.
+Defines mouseover and mouseout event listeners for interactivity.
+
+Tooltip:
+Creates a tooltip div element that will be used to display additional information when hovering over a bar.
+Sets initial styles and opacity.
+
+Mouseover and Mouseout Event Handlers:
+handleMouseOver: Displays the tooltip with information about the date and GDP when a bar is hovered.
+handleMouseOut: Hides the tooltip when the mouse moves away from a bar.
+
+CSS Styling:
+Styles the chart container, bars, and tooltip to enhance the visual presentation and interaction.
+Specifies a hover effect for the bars.
+In summary, this code generates a bar chart with D3.js, displaying GDP values over different dates. The 
+chart is interactive, with tooltips showing additional information on hover, and it is styled for a 
+visually appealing presentation.
